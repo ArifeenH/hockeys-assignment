@@ -18,6 +18,9 @@
         .font-manrope{
             font-family: 'Manrope', sans-serif;
         }
+        .radial-progress::before{
+          background: radial-gradient(farthest-side,currentColor 98%,#0000) top/var(--thickness) var(--thickness) no-repeat,conic-gradient(currentColor calc(var(--value) * 1%),#e1dede 0)
+        }
      </style>
     <!-- Tailwind Customization -->
     <script>
@@ -27,19 +30,22 @@
               colors: {
                 'brand-clr': '#FF4240',
                 'text-clr': "#424247",
+                'para-text': '#13131899',
+                'border-clr': '#0c03034a'
               }
             }
           }
         }
       </script>
 </head>
-<body class="font-manrope py-10"> 
-    <header class="container mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
+<body class="font-manrope"> 
+    <header class="container mx-auto py-10 px-5 md:px-2">
+        <!-- Navigation -->
+        <nav class="pb-10">
+            <div class="navbar bg-base-100 p-0">
                 <div class="navbar-start">
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -63,7 +69,7 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="text-4xl font-extrabold">Hockey<span class="text-brand-clr">'</span>s</a>
+                  <a class="md:text-4xl text-2xl font-extrabold">Hockey<span class="text-brand-clr">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1text-base text-base text-text-clr">
@@ -76,12 +82,89 @@
                 </div>
                 <div class="navbar-end">
                   <i class="fa-solid fa-magnifying-glass mr-4 cursor-pointer"></i>
-                  <a class="btn text-xl text-white font-bold bg-brand-clr hover:bg-red-500 transition ease-in-out delay-75">Get Tickets</a>
+                  <a class="btn text-base md:text-xl text-white font-bold bg-brand-clr hover:bg-red-500 transition ease-in-out delay-75">Get Tickets</a>
                 </div>
               </div>
         </nav>
         <!-- Hero Section -->
+         <section class="container mx-auto">
+                <div class="hero relative min-h-[350px] md:min-h-[550px] rounded-xl"style="background-image: url(images/1.png);">
+                    <div class="flex flex-col md:flex-row justify-evenly md:justify-between items-center md:items-end min-h-72 min-w-full px-0 md:px-5 absolute top-[220px]">
+                        <div class="flex justify-between w-20">
+                            <i class="fa-solid fa-chevron-left text-white bg-black p-3 rounded-full"></i>
+                            <i class="fa-solid fa-chevron-right text-white bg-black p-3 rounded-full"></i>
+                        </div>
+                         <div class="max-w-[502px] bg-black p-2 md:p-4 lg:p-8 rounded-xl">
+                            <h1 class="text-xl md:text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+                            <p class="text-[14px] md:text-base font-medium text-[#FFFFFF99]">
+                                Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. 
+                                Purus urna in sit nullam proin. 
+                                </p>
+                        </div>
+             </div>
+                </div>
+         </section>
     </header>
+    <main class="container mx-auto">
+        <!-- Professional Hockey's Club -->
+         <section class="py-32 px-5 md:px-2 lg:py-10">
+            <div class="border-y-2 border-dashed border-border-clr">
+                <div class="hero">
+                    <div class="hero-content px-0 text-center">
+                      <div class="max-w-[670px]">
+                        <h1 class="text-2xl md:text-4xl font-bold">Professional Hockeys Group</h1>
+                        <p class="py-6 text-para-text">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Progress -->
+            <div class="md:flex items-center justify-between py-10 border-b-2 border-dashed border-border-clr">
+              <!-- First Radial Prog -->
+              <div class="card items-center">
+                  <div class="radial-progress text-brand-clr rotate-[130deg]" style="--value:87;" role="progressbar">
+                    <span class="-rotate-[130deg]">87%</span>
+                  </div>
+                <div class="card-body items-center py-4 text-center">
+                  <h2 class="card-title text-xl">Player Facility</h2>
+                  <p class="text-para-text">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+              </div>
+              <!-- 2nd Radial Prog -->
+              <div class="card items-center">
+                  <div class="radial-progress text-success rotate-[130deg]" style="--value:95;" role="progressbar">
+                    <span class="-rotate-[130deg]">95%</span>
+                  </div>
+                <div class="card-body items-center py-4 text-center">
+                  <h2 class="card-title text-xl">Experienced Coach</h2>
+                  <p class="text-para-text">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+              </div>
+              <!-- 3rd Radial Prog -->
+              <div class="card items-center">
+                  <div class="radial-progress text-warning rotate-[130deg]" style="--value:90;" role="progressbar">
+                    <span class="-rotate-[130deg]">90%</span>
+                  </div>
+                <div class="card-body items-center py-4 text-center">
+                  <h2 class="card-title text-xl">Senior Player</h2>
+                  <p class="text-para-text">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+              </div>
+              <!-- 4th Radial Prog -->
+              <div class="card items-center">
+                  <div class="radial-progress text-info rotate-[130deg]" style="--value:80;" role="progressbar">
+                    <span class="-rotate-[130deg]">80%</span>
+                  </div>
+                <div class="card-body items-center py-4 text-center">
+                  <h2 class="card-title text-xl">Training Ground</h2>
+                  <p class="text-para-text">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+              </div>
+            </div>
+         </section>
+    </main>
     
 </body>
 </html>
