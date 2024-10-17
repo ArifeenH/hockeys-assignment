@@ -21,6 +21,15 @@
         .radial-progress::before{
           background: radial-gradient(farthest-side,currentColor 98%,#0000) top/var(--thickness) var(--thickness) no-repeat,conic-gradient(currentColor calc(var(--value) * 1%),#e1dede 0)
         }
+        .card.image-full:before {
+          position: relative;
+          content: "";
+          z-index: 10;
+          border-radius: var(--rounded-box, 1rem);
+          --tw-bg-opacity: 1;
+          background-color: oklch(0 0 0);
+          opacity: .50;
+          }
      </style>
     <!-- Tailwind Customization -->
     <script>
@@ -107,10 +116,10 @@
     </header>
     <main class="container mx-auto">
         <!-- Professional Hockey's Club -->
-         <section class="py-32 px-5 md:px-2 lg:py-10">
+         <section class="pt-32 pb-5 px-5 md:px-2 lg:py-5">
             <div class="border-y-2 border-dashed border-border-clr">
                 <div class="hero">
-                    <div class="hero-content px-0 text-center">
+                    <div class="hero-content px-0 text-center pt-8">
                       <div class="max-w-[670px]">
                         <h1 class="text-2xl md:text-4xl font-bold">Professional Hockeys Group</h1>
                         <p class="py-6 text-para-text">
@@ -121,7 +130,7 @@
                   </div>
             </div>
             <!-- Progress -->
-            <div class="md:flex items-center justify-between py-10 border-b-2 border-dashed border-border-clr">
+            <div class="md:flex items-center justify-between py-10">
               <!-- First Radial Prog -->
               <div class="card items-center">
                   <div class="radial-progress text-brand-clr rotate-[130deg]" style="--value:87;" role="progressbar">
@@ -163,6 +172,229 @@
                 </div>
               </div>
             </div>
+         </section>
+         <!-- Program Section -->
+         <section class="px-5 pb-16 md:px-2">
+            <div class="border-y-2 border-dashed border-border-clr">
+              <div class="hero">
+                <div class="hero-content px-0 text-center pt-8">
+                  <div class="max-w-[670px]">
+                    <h1 class="text-2xl md:text-4xl font-bold">Program Sections</h1>
+                    <p class="py-6 text-para-text">
+                          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <!-- Grid -->
+            <div class="py-10 grid grid-row-2 grid-cols-1 md:grid-row-3 md:grid-cols-2 gap-4">
+              <!-- Card 1 -->
+              <div class="card image-full shadow-xl">
+                <figure>
+                  <img class="min-w-full"
+                    src="images/2.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body p-6 md:p-8 justify-end">
+                  <div>
+                    <h2 class="card-title text-xl md:text-3xl font-extrabold text-white">Junior Program</h2>
+                    <p class="text-white py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  </div>
+                  <div class="card-actions justify-start">
+                    <button class="btn text-base border-none md:text-xl text-white font-bold bg-brand-clr hover:bg-red-500 transition ease-in-out delay-75">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card image-full shadow-xl">
+                <figure>
+                  <img class="min-w-full"
+                    src="images/3.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body p-6 md:p-8 justify-end">
+                  <div>
+                    <h2 class="card-title text-xl md:text-3xl font-extrabold text-white">Teenager Program</h2>
+                    <p class="text-white py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  </div>
+                  <div class="card-actions justify-start">
+                    <button class="btn text-base border-none md:text-xl text-white font-bold bg-brand-clr hover:bg-red-500 transition ease-in-out delay-75">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card md:min-h-[368px] col-span-1 row-span-1 md:col-span-2 md:row-span-3  image-full shadow-xl">
+                <figure>
+                  <img class="min-w-full"
+                    src="images/4.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body p-6 md:p-8 justify-end">
+                  <div>
+                    <h2 class="card-title text-xl md:text-3xl font-extrabold text-white">Professional Program</h2>
+                    <p class="text-white py-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  </div>
+                  <div class="card-actions justify-start">
+                    <button class="btn text-base border-none md:text-xl text-white font-bold bg-brand-clr hover:bg-red-500 transition ease-in-out delay-75">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </section>
+         <!-- Products Section -->
+         <section class="px-5 pb-16 md:px-2">
+          <div class="border-y-2 border-dashed border-border-clr">
+            <div class="hero">
+              <div class="hero-content px-0 text-center pt-8">
+                  <div class="max-w-[670px]">
+                    <h1 class="text-2xl md:text-4xl font-bold">Our New Products</h1>
+                    <p class="py-6 text-para-text">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Products -->
+          <div class="py-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Product 1 -->
+            <div class="card flex-col items-stretch md:flex-row bg-base-100 border border-border-clr">
+              <figure class="px-5 py-5 ">
+                <img class="max-h-[172px] min-w-[284px] md:min-w-[180px]"
+                  src="Images/5.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body px-0 py-5 pr-5 pl-5 md:pl-0">
+                <div class="w-44 text-para-text flex justify-between items-center">
+                  <h5><i class="fa-solid fa-star text-[#F99808] pr-2"></i>5.0</h5>
+                  <h5><i class="fa-solid fa-eye pr-2"></i>20</h5>
+                  <h5><i class="fa-regular fa-heart pr-2"></i>200</h5>
+                </div>
+                <h2 class="card-title text-xl">World Cup Flags Football</h2>
+                <p class="text-para-text">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                <div class="text-para-text md:flex justify-between items-center">
+                  <h3 class="text-[18px] text-brand-clr font-extrabold pb-2 md:pb-0">Price - $22.00</h3>
+                  <h5><i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee: Free</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="card flex-col items-stretch md:flex-row bg-base-100 border border-border-clr">
+              <figure class="px-5 py-5 ">
+                <img class="max-h-[172px] min-w-[284px] md:min-w-[180px]"
+                  src="Images/6.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body px-0 py-5 pr-5 pl-5 md:pl-0">
+                <div class="w-44 text-para-text flex justify-between items-center">
+                  <h5><i class="fa-solid fa-star text-[#F99808] pr-2"></i>5.0</h5>
+                  <h5><i class="fa-solid fa-eye pr-2"></i>20</h5>
+                  <h5><i class="fa-regular fa-heart pr-2"></i>200</h5>
+                </div>
+                <h2 class="card-title text-xl">World Cup Flags Football</h2>
+                <p class="text-para-text">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                <div class="text-para-text md:flex justify-between items-center">
+                  <h3 class="text-[18px] text-brand-clr font-extrabold pb-2 md:pb-0">Price - $22.00</h3>
+                  <h5><i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee: Free</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="card flex-col items-stretch md:flex-row bg-base-100 border border-border-clr">
+              <figure class="px-5 py-5 ">
+                <img class="max-h-[172px] min-w-[284px] md:min-w-[180px]"
+                  src="Images/7.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body px-0 py-5 pr-5 pl-5 md:pl-0">
+                <div class="w-44 text-para-text flex justify-between items-center">
+                  <h5><i class="fa-solid fa-star text-[#F99808] pr-2"></i>5.0</h5>
+                  <h5><i class="fa-solid fa-eye pr-2"></i>20</h5>
+                  <h5><i class="fa-regular fa-heart pr-2"></i>200</h5>
+                </div>
+                <h2 class="card-title text-xl">World Cup Flags Football</h2>
+                <p class="text-para-text">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                <div class="text-para-text md:flex justify-between items-center">
+                  <h3 class="text-[18px] text-brand-clr font-extrabold pb-2 md:pb-0">Price - $22.00</h3>
+                  <h5><i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee: Free</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="card flex-col items-stretch md:flex-row bg-base-100 border border-border-clr">
+              <figure class="px-5 py-5 ">
+                <img class="max-h-[172px] min-w-[284px] md:min-w-[180px]"
+                  src="Images/8.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body px-0 py-5 pr-5 pl-5 md:pl-0">
+                <div class="w-44 text-para-text flex justify-between items-center">
+                  <h5><i class="fa-solid fa-star text-[#F99808] pr-2"></i>5.0</h5>
+                  <h5><i class="fa-solid fa-eye pr-2"></i>20</h5>
+                  <h5><i class="fa-regular fa-heart pr-2"></i>200</h5>
+                </div>
+                <h2 class="card-title text-xl">World Cup Flags Football</h2>
+                <p class="text-para-text">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                <div class="text-para-text md:flex justify-between items-center">
+                  <h3 class="text-[18px] text-brand-clr font-extrabold pb-2 md:pb-0">Price - $22.00</h3>
+                  <h5><i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee: Free</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="card flex-col items-stretch md:flex-row bg-base-100 border border-border-clr">
+              <figure class="px-5 py-5 ">
+                <img class="max-h-[172px] min-w-[284px] md:min-w-[180px]"
+                  src="Images/9.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body px-0 py-5 pr-5 pl-5 md:pl-0">
+                <div class="w-44 text-para-text flex justify-between items-center">
+                  <h5><i class="fa-solid fa-star text-[#F99808] pr-2"></i>5.0</h5>
+                  <h5><i class="fa-solid fa-eye pr-2"></i>20</h5>
+                  <h5><i class="fa-regular fa-heart pr-2"></i>200</h5>
+                </div>
+                <h2 class="card-title text-xl">World Cup Flags Football</h2>
+                <p class="text-para-text">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                <div class="text-para-text md:flex justify-between items-center">
+                  <h3 class="text-[18px] text-brand-clr font-extrabold pb-2 md:pb-0">Price - $22.00</h3>
+                  <h5><i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee: Free</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="card flex-col items-stretch md:flex-row bg-base-100 border border-border-clr">
+              <figure class="px-5 py-5 ">
+                <img class="max-h-[172px] min-w-[284px] md:min-w-[180px]"
+                  src="Images/10.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body px-0 py-5 pr-5 pl-5 md:pl-0">
+                <div class="w-44 text-para-text flex justify-between items-center">
+                  <h5><i class="fa-solid fa-star text-[#F99808] pr-2"></i>5.0</h5>
+                  <h5><i class="fa-solid fa-eye pr-2"></i>20</h5>
+                  <h5><i class="fa-regular fa-heart pr-2"></i>200</h5>
+                </div>
+                <h2 class="card-title text-xl">World Cup Flags Football</h2>
+                <p class="text-para-text">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                <div class="text-para-text md:flex justify-between items-center">
+                  <h3 class="text-[18px] text-brand-clr font-extrabold pb-2 md:pb-0">Price - $22.00</h3>
+                  <h5><i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee: Free</h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
          </section>
     </main>
     
